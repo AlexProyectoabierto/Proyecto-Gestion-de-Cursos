@@ -37,7 +37,7 @@ final class TicketController
             );
 
             Response::json([
-                'mensaje' => 'Ticket creado correctamente',
+                'mensaje' => 'Solicitud creada correctamente',
                 'id_ticket' => $idTicket
             ], 201);
         } catch (RuntimeException $error) {
@@ -60,7 +60,7 @@ final class TicketController
             );
 
             Response::json([
-                'mensaje' => 'Ticket actualizado correctamente'
+                'mensaje' => 'Solicitud actualizada correctamente'
             ]);
         } catch (RuntimeException $error) {
             $this->responderError($error);
@@ -139,7 +139,7 @@ public function actualizarComoEncargado(): void
         );
 
         Response::json([
-            'mensaje' => 'Ticket actualizado correctamente'
+            'mensaje' => 'Solicitud actualizada correctamente'
         ]);
     } catch (RuntimeException $error) {
         $this->responderError($error);
