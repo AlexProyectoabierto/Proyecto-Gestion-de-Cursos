@@ -98,7 +98,7 @@ formulario.addEventListener(
             if (!respuesta.ok) {
                 throw new Error(
                     datos.error ||
-                    'No fue posible guardar el ticket.'
+                    'No fue posible guardar la solicitud.'
                 );
             }
 
@@ -176,7 +176,7 @@ async function cargarDatos() {
         if (!respuesta.ok) {
             throw new Error(
                 datos.error ||
-                'No fue posible obtener los tickets.'
+                'No fue posible obtener las solicitudes.'
             );
         }
 
@@ -295,7 +295,7 @@ function cargarTicketEnFormulario(ticket) {
 
     campoPrioridad.value = ticket.id_prioridad;
 
-    tituloFormulario.textContent = 'Modificar ticket';
+    tituloFormulario.textContent = 'Modificar solicitud';
     botonGuardar.textContent = 'Guardar cambios';
     botonCancelar.hidden = false;
 
@@ -313,8 +313,8 @@ function volverModoCreacion() {
 
     campoIdTicket.value = '';
 
-    tituloFormulario.textContent = 'Crear ticket';
-    botonGuardar.textContent = 'Crear ticket';
+    tituloFormulario.textContent = 'Nueva solicitud de cobertura';
+    botonGuardar.textContent = 'Guardar Solicitud';
     botonCancelar.hidden = true;
 }
 
@@ -334,7 +334,7 @@ function bloquearFormulario(bloquear) {
     if (bloquear === true) {
         botonGuardar.textContent = 'Guardando...';
     } else if (campoIdTicket.value === '') {
-        botonGuardar.textContent = 'Crear ticket';
+        botonGuardar.textContent = 'Guardar Solicitud';
     } else {
         botonGuardar.textContent = 'Guardar cambios';
     }
