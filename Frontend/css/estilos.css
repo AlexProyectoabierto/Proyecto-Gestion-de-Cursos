@@ -7,14 +7,14 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 main {
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -25,6 +25,8 @@ main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 380px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .tarjeta-login header h1 {
@@ -91,4 +93,105 @@ footer {
     text-align: center;
     font-size: 0.8rem;
     color: #777777;
+}
+
+/* --- Ajustes sutiles para el panel de Encargado --- */
+.dashboard-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.dashboard-header h1 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+}
+
+.dashboard-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dashboard-nav a {
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.dashboard-nav a:hover {
+    text-decoration: underline;
+}
+
+.dashboard-main {
+    max-width: 1000px;
+    width: 100%;
+    margin: 25px auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.card-section {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card-section h2 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #333333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 0.85rem;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+th {
+    background-color: #f7fafc;
+    color: #4a5568;
+}
+
+/* --- Ajuste final para limpiar fondos en el panel de Encargado --- */
+.dashboard-body {
+    background-color: #f2f4f7;
+    color: #333333;
+}
+
+.dashboard-main {
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.card-section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    max-width: 800px; /* Ancho cómodo y centrado para ambas tarjetas */
+    width: 100%;
+    margin: 0 auto;
 }
