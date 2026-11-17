@@ -13,14 +13,13 @@
     <link rel="stylesheet" href="../css/estilos.css">
 
     <script src="../js/encargado.js" defer></script>
-     <style> *{color: #ffffff; background-color: #111;} </style>
 </head>
 
-<body>
-    <header>
+<body class="dashboard-body">
+    <header class="dashboard-header">
         <h1>Gestión de Cursos y Cobertura Docente</h1>
 
-        <nav>
+        <nav class="dashboard-nav">
             <a href="crear-usuario.html">
                 Crear usuario
             </a>
@@ -29,14 +28,14 @@
                 Criterios de prioridad
             </a>
 
-            <button id="boton-logout" type="button">
+            <button id="boton-logout" type="button" class="btn-logout">
                 Cerrar sesión
             </button>
         </nav>
     </header>
 
-    <main>
-        <section>
+    <main class="dashboard-main">
+        <section class="card-section">
             <h2 id="titulo-formulario">
                 Registrar Necesidad de Curso
             </h2>
@@ -112,7 +111,7 @@
             </form>
         </section>
 
-        <section>
+        <section class="card-section">
             <h2>Todos los tickets</h2>
 
             <table>
