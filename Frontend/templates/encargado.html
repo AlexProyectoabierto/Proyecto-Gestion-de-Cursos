@@ -114,6 +114,30 @@
         <section class="card-section">
             <h2>Todos los tickets</h2>
 
+            <!-- Barra de filtros y ordenamiento -->
+            <div class="filtros-container" style="display: flex; gap: 15px; margin-bottom: 15px; flex-wrap: wrap;">
+                <div>
+                    <label for="filtro-estado" style="font-size: 0.8rem; font-weight: bold; color: #444;">Filtrar por Estado:</label>
+                    <select id="filtro-estado" style="padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;">
+                        <option value="">Todos los estados</option>
+                        <option value="Pendiente">Pendiente</option>
+                        <option value="En proceso">En proceso</option>
+                        <option value="Resuelto">Resuelto</option>
+                        <option value="Abierto">Abierto</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="filtro-prioridad" style="font-size: 0.8rem; font-weight: bold; color: #444;">Filtrar por Prioridad:</label>
+                    <select id="filtro-prioridad" style="padding: 6px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85rem;">
+                        <option value="">Todas las prioridades</option>
+                        <option value="Fatal">Fatal</option>
+                        <option value="Alta">Alta</option>
+                        <option value="Media">Media</option>
+                        <option value="Baja">Baja</option>
+                    </select>
+                </div>
+            </div>
+
             <table>
                 <thead>
                     <tr>
