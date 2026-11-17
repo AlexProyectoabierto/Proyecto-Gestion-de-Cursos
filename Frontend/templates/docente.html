@@ -13,20 +13,21 @@
     <link rel="stylesheet" href="../css/estilos.css">
 
     <script src="../js/docente.js" defer></script>
-    <style> *{color: #ffffff; background-color: #111;} </style>
 </head>
 
-<body>
-    <header>
+<body class="dashboard-body">
+    <header class="dashboard-header">
         <h1>Mis Solicitudes de Cobertura</h1>
 
-        <button id="boton-logout" type="button">
-            Cerrar sesión
-        </button>
+        <nav class="dashboard-nav">
+            <button id="boton-logout" type="button" class="btn-logout">
+                Cerrar sesión
+            </button>
+        </nav>
     </header>
 
-    <main>
-        <section>
+    <main class="dashboard-main">
+        <section class="card-section">
             <h2 id="titulo-formulario">Registrar Necesidad de Cobertura</h2>
 
             <form id="formulario-ticket">
@@ -71,8 +72,8 @@
                             Selecciona una prioridad
                         </option>
                     </select>
-                     <p>
-                        <a href="criterios-prioridad.html">
+                     <p style="margin-top: 5px; font-size: 0.85rem;">
+                        <a href="criterios-prioridad.html" style="color: #0066cc; text-decoration: none;">
                             Consultar criterios de prioridad
                         </a>
                     </p>
@@ -95,7 +96,7 @@
             </form>
         </section>
 
-        <section>
+        <section class="card-section">
             <h2>Mis Solicitudes Activas</h2>
 
             <table>
